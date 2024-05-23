@@ -1,0 +1,145 @@
+$header-height: 70px; // You can adjust this value as per your header height
+
+/*header section*/
+.hero_area {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub_page {
+  .hero_area {
+    min-height: auto;
+  }
+}
+
+.header_section {
+  background-color: $primary2;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; // To ensure it stays above other content
+
+  .top_nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height; // Set height to match the header
+
+    .search_form {
+      display: flex;
+      margin: 0;
+      position: relative;
+
+      .form-control {
+        border-radius: 45px;
+        height: 40px;
+        min-width: unset;
+        border: none;
+      }
+
+      button {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        border: none;
+        outline: none;
+        color: $white;
+        background-color: $primary1;
+        border-radius: 100%;
+      }
+    }
+
+    .navbar-brand {
+      padding: 0;
+      margin: 0;
+      color: $black;
+      font-size: 24px;
+      font-weight: bold;
+
+      span {
+        color: $white;
+      }
+    }
+
+    .custom_nav-container {
+      padding: 0;
+
+      .navbar-nav {
+        margin-left: auto;
+
+        .nav-item {
+          .nav-link {
+            padding: 10px 25px;
+            color: $white;
+            text-align: center;
+          }
+
+          &:hover,
+          &.active {}
+        }
+      }
+    }
+
+    .custom_nav-container .navbar-toggler {
+      outline: none;
+      padding: 0;
+      width: 37px;
+      height: 42px;
+      transition: all 0.3s;
+
+      span {
+        display: block;
+        width: 35px;
+        height: 4px;
+        background-color: $white;
+        margin: 7px 0;
+        transition: all 0.3s;
+        position: relative;
+        border-radius: 5px;
+        transition: all 0.3s;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: $white;
+          top: -10px;
+          border-radius: 5px;
+          transition: all 0.3s;
+        }
+
+        &::after {
+          top: 10px;
+        }
+      }
+
+      &[aria-expanded="true"] {
+        transform: rotate(360deg);
+
+        span {
+          transform: rotate(45deg);
+
+          &::before,
+          &::after {
+            transform: rotate(90deg);
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*end header section*/
+
+/* The rest of your code remains unchanged */

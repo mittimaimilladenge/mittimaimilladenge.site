@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/fire.jpg" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Mitti Mai Milla Denge</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/fire.jpg" alt="Logo" class="small-logo">
+            <span>
+              Mitti Mai Milla Denge
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""></span>
+          </button>
+          
+          <style>
+            body {
+      overflow-x: hidden; /* Prevent horizontal overflow */
+    }
+             .container-fluid, .container {
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .navbar {
+      width: 100%;
+    }
+
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+             .small-logo {
+      max-width: 40px; /* Adjust the max-width as needed */
+      height: auto;    /* Maintain aspect ratio */
+      border-radius: 40%; /* Make the logo circular */
+      margin-right: 0.1px; /* Add margin between the logo and text */
+    }
+
+          
+    @media (max-width: 768px) {
+      .small-logo {
+        max-width: 25px; /* Adjust the max-width for smaller screens */
+      }
+    }
+          </style>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link pl-lg-0" href="index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="categories.html">Categories <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html"> Blog </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <form class="search_form" action="https://www.google.com/search" method="get">
+              <input type="text" class="form-control" name="q" placeholder="Search here...">
+              <button class="" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+          </form>   
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- catagory section -->
+  <section class="catagory_section layout_padding">
+    <div class="row justify-content-center">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>Books Categories</h2>
+          <p>Explore Our Book Categories: Notes, Coding, Assignments, and Question Banks – Your One-Stop Academic Resource.</p>
+        </div>
+        <div class="row">
+          <!-- Programming Books -->
+          <div class="col-sm-6 col-md-4">
+            <div class="box" onclick="showTextbookPopup('Programming Books')">
+              <div class="img-box">
+                <img src="images/cat1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Programming Books</h5>
+                <p>Click to view the list of programming books.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Lecture Notes -->
+          <div class="col-sm-6 col-md-4">
+            <div class="box" onclick="showTextbookPopup('Lecture Notes')">
+              <div class="img-box">
+                <img src="images/cat2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Lecture Notes</h5>
+                <p>Click to view the list of lecture notes.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Question Bank -->
+          <div class="col-sm-6 col-md-4">
+            <div class="box" onclick="showTextbookPopup('Question Bank')">
+              <div class="img-box">
+                <img src="images/cat3.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Question Bank</h5>
+                <p>Click to view the list of Question Bank.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Question Paper-->
+          <div class="col-sm-6 col-md-4">
+            <div class="box" onclick="showTextbookPopup('Question Paper')">
+              <div class="img-box">
+                <img src="images/cat4.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Question Paper</h5>
+                <p>Click to view the list of Question Paper.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Assignment -->
+          <div class="col-sm-6 col-md-4">
+            <div class="box" onclick="showTextbookPopup('Assignment')">
+              <div class="img-box">
+                <img src="images/cat5.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Assignment</h5>
+                <p>Click to view the list of Assignment.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Major Project Code Source -->
+          <div class="col-sm-6 col-md-4">
+            <div class="box" onclick="showTextbookPopup('Project Code Source')">
+              <div class="img-box">
+                <img src="images/cat6.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>Project Code Source</h5>
+                <p>Click to view the list of P.C.S.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Lab Practical -->
+      <div class="col-sm-6 col-md-4">
+        <div class="box" onclick="showTextbookPopup('Lab Practical')">
+          <div class="img-box">
+            <img src="images/Lab.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>Lab Practical</h5>
+            <p>Click to view the list of Lab Practical.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Popup -->
+  <div id="textbookPopup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closeTextbookPopup()">&times;</span>
+      <h2 id="categoryTitle"></h2>
+      <ul id="textbookList"></ul>
+    </div>
+  </div>
+  
+  <!-- Book Display -->
+  <div id="bookDisplay" class="popup" style="display: none;">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closeBook()">&times;</span>
+      <h2 id="bookTitle"></h2>
+      <div id="bookContent">
+        <iframe id="pdfIframe" src="" type="application/pdf" width="100%" height="500px"></iframe>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  function showTextbookPopup(category) {
+    var popup = document.getElementById('textbookPopup');
+    var categoryTitle = document.getElementById('categoryTitle');
+    var textbookList = document.getElementById('textbookList');
+    
+    categoryTitle.textContent = category;
+    textbookList.innerHTML = '';
+    
+    switch (category) {
+      case 'Programming Books':
+        textbookList.innerHTML = `
+          <li onclick="openBook('C Programming', 'Programming books/C Programming.pdf')">C Programming Book</li>
+          <li onclick="openBook('C++ Programming', 'Programming books/C++ Programming.pdf')">Beginning C++ Programming</li>
+          <li onclick="openBook('Python Programming', 'Programming books/Learning_Python.pdf')">Python</li>
+          <li onclick="openBook('Java Programming', 'Programming books/LearnJava.pdf')">Java</li>
+          <li onclick="openBook('Operating System', 'Programming books/FundamentalsofOperatingSystems.pdf')">Operating System</li>
+          <li onclick="openBook('Data Structure of Alogrithm', 'Programming books/DSA.pdf')">Data Structures and Algorithms (DSA)</li>
+          <li onclick="openBook('React JS', 'Programming books/Beginning.ReactJS.Foundations.pdf')">Beginning.ReactJS</li>
+        `;
+        break;
+      case 'Lecture Notes':
+        textbookList.innerHTML = `
+          <li onclick="openBook('Operating System', 'Lecture/OS NOTES.pdf')">Operating System</li>
+          <li onclick="openBook('Object-Oriented-Programming(OOPS)', 'Lecture/Rashi notes oops.pdf')">Object-Oriented-Programming</li>
+        `;
+        break;
+      case 'Question Bank':
+        textbookList.innerHTML = `
+          <li onclick="openBook('Python', 'Question Bank/Python QB.pdf')">Python QB</li>
+          <li onclick="openBook('Java', 'Question Bank/Java.pdf')">Java QB</li>
+          <li onclick="openBook('Design and Analysis of Algorithms', 'Question Bank/DAA .pdf')">Design and Analysis of Algorithms (DAA) QB</li>
+          <li onclick="openBook('Computer Network', 'Question Bank/CN.pdf')">Computer Network (CN) QB</li>
+          <li onclick="openBook('Data Warehousing and Mining', 'Question Bank/DWM QB-Answers .pdf')">Data Warehouse & Mining (DWM) QB</li>
+        `;
+        break;
+      case 'Question Paper':
+        textbookList.innerHTML = `
+          <li onclick="openBook('SEM-2 PREVIOUS PAPER', 'Question Paper/SEM-2 PREVIOUS PAPER.pdf')">SEM-2 PREVIOUS PAPER</li>
+          <li onclick="openBook('SEM-3 PREVIOUS PAPER', 'Question Paper/SEM-3 PREVIOUS PAPER .pdf')">SEM-3 PREVIOUS PAPER</li>
+        `;
+        break;
+      case 'Assignment':
+        textbookList.innerHTML = `
+          <li onclick="showAssignmentPopup('Python')">Python</li>
+          <li onclick="showAssignmentPopup('Java')">Java</li>
+          <li onclick="showAssignmentPopup('DWM')">Date Warehousing & Mining (DWM)</li>
+          <li onclick="showAssignmentPopup('DAA')">Design and Analysis of Algorithms (DAA)</li>
+          <li onclick="showAssignmentPopup('OOPS')">Object-Oriented-Programming (OOPs)</li>
+          <li onclick="showAssignmentPopup('COA')">Computer of Architecture</li>
+          <li onclick="showAssignmentPopup('OS')">Operating System (OS)</li>
+          <li onclick="showAssignmentPopup('STQA')">Software Testing Quality Assurance (STQA)</li>
+          <li onclick="showAssignmentPopup('FA')">Financial Accounting</li>
+        `;
+        break;
+      case 'Project Code Source':
+        textbookList.innerHTML = `
+          <li><a href="https://github.com/mittimaimilladenge/QR-Code-Generate-Using-Python.git" target="_blank">QR Code Generate using Python</a></li>
+          <li><a href="https://github.com/mittimaimilladenge/Infinite-Carousel-Using-HTML-CSS.git" target="_blank">Infinite Carousel using HTML & CSS</a></li>
+          <li><a href="https://github.com/mittimaimilladenge/Heart-Rate-Animation-Using-HTML-CSS.git" target="_blank">Heart Rate Animation Using HTML & CSS</a></li>
+        `;
+        break;
+      case 'Lab Practical':
+        textbookList.innerHTML += `
+          <li onclick="openBook('Python', 'Lab/Python Lab.pdf')">Python 1 to 10</li>
+        `;
+        break;
+      default:
+        break;
+    }
+    
+    popup.style.display = 'block';
+  }
+  
+  function closeTextbookPopup() {
+    var popup = document.getElementById('textbookPopup');
+    popup.style.display = 'none';
+  }
+  
+  function showAssignmentPopup(subject) {
+    var textbookList = document.getElementById('textbookList');
+    
+    switch (subject) {
+      case 'Python':
+        textbookList.innerHTML = `
+          <li onclick="openBook('Python Assignment 01', 'Assignment/python assignment 1.pdf')">Python Assignment 01</li>
+          <li onclick="openBook('Python Assignment 2,3,4 & 5', 'Assignment/PYTHON 2nd ASS TO 5th ASS.pdf')">Python Assignment 2,3,4 & 5</li>
+        `;
+        break;
+      case 'Java':
+        textbookList.innerHTML = `
+          <li onclick="openBook('JAVA Assignment 1 to 12', 'Assignment/JAVA Assignment 1 to 12.pdf')">JAVA Assignment 1 to 12</li>
+        `;
+        break;
+      case 'DWM':
+        textbookList.innerHTML = `
+          <li onclick="openBook('DWM 1,2,3 & 4', 'Assignment/DWM Assignment 1 to 4.pdf')">DWM 1,2,3 & 4</li>
+        `;
+        break;
+      case 'DAA':
+        textbookList.innerHTML = `
+          <li onclick="openBook('DAA 1,2,3,4 & 5', 'Assignment/DAA Assignment 1 to 5.pdf')">DAA 1,2,3,4 & 5</li>
+        `;
+        break;
+      case 'OOPS':
+        textbookList.innerHTML = `
+          <li onclick="openBook('OOPs 1,2,3,4 & 5', 'Assignment/OOPs.pdf')">OOPs 1,2,3,4 & 5</li>
+        `;
+        break;
+      case 'COA':
+        textbookList.innerHTML = `
+          <li onclick="openBook('COA 1,2,3,4 & 5', 'Assignment/COA.pdf')">COA 1,2,3,4 & 5</li>
+        `;
+        break;
+      case 'OS':
+        textbookList.innerHTML = `
+          <li onclick="openBook('OS 1,2,3,4 & 5', 'Assignment/OS.pdf')">OS 1,2,3,4 & 5</li>
+        `;
+        break;
+      case 'STQA':
+        textbookList.innerHTML = `
+          <li onclick="openBook('STQA 1,2,3,4 & 5', 'Assignment/STQA.pdf')">STQA 1,2,3,4 & 5</li>
+        `;
+        break;
+      case 'FA':
+        textbookList.innerHTML = `
+          <li onclick="openBook('Financial Accounting 1,2,3,4, & 5', 'Assignment/FA.pdf')">Financial Accounting 1,2,3,4, & 5</li>
+        `;
+        break;
+      default:
+        break;
+    }
+  }
+  
+  function openBook(book, pdf) {
+    var bookDisplay = document.getElementById('bookDisplay');
+    var bookTitle = document.getElementById('bookTitle');
+    var pdfIframe = document.getElementById('pdfIframe');
+  
+    bookTitle.textContent = book;
+    pdfIframe.src = pdf;
+    
+    bookDisplay.style.display = 'block';
+  }
+  
+  function closeBook() {
+    var bookDisplay = document.getElementById('bookDisplay');
+    var pdfIframe = document.getElementById('pdfIframe');
+  
+    pdfIframe.src = '';
+    bookDisplay.style.display = 'none';
+  }
+  </script>
+  
+  <style>
+  /* Add some basic styling to the boxes */
+  .box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .img-box img {
+    max-width: 100%;
+  }
+  
+  .detail-box h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  /* Popup styling */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    max-width: 600px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #aaa;
+  }
+  
+  .close-btn:hover {
+    color: #000;
+  }
+  
+  #textbookList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #textbookList li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  #bookDisplay #bookContent {
+    margin-top: 20px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .popup-content {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .popup-content {
+      width: 90%;
+    }
+  }
+  </style>
+  
+
+
+<section class="info_section layout_padding2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 info-col">
+        <div class="info_detail">
+          <h4>
+            About Us
+          </h4>
+          <p>
+            Mitti Mai Milla Denge: A tight-knit university friends group united by shared values, diverse personalities, and unwavering support. Always here for each other, we're more than friends – we're family.
+          </p>
+          <div class="info_social">
+            <a href="https://github.com/mittimaimilladenge">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61558761886811&mibextid=ZbWKwL">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mitti-mai-milla-denge-860730307">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/mitti_mai_milla_denge?utm_source=qr&igsh=cGFxcHUzM2pzNjds">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 info-col">
+        <div class="info_contact">
+          <h4>
+            Address
+          </h4>
+          <div class="contact_link_box">
+            <a href="#" onclick="openMapPopup(); return false;">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                  CSMU
+              </span>
+          </a>
+          
+          <script>
+          function openMapPopup() {
+              var url = "https://www.google.com/maps?q=Chhatrapati+Shivaji+Maharaj+University";
+              window.open(url, "_blank", "width=600,height=600");
+          }
+          </script>
+                   
+          </a>
+          <a href="tel:+91 7208240169">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+                Call +91 7208240169
+            </span>
+        </a>
+            <a href="mailto:mittimaimilladenge24922@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                  mittimaimilladenge24922@gmail.com
+              </span>
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 info-col">
+        <div class="info_contact">
+          <h4>
+            Newsletter
+          </h4>
+          <form action="mailto:mittimaimilladenge24922@gmail.com" method="post" enctype="text/plain" >
+            <input type="text" name="email" placeholder="Enter email" />
+            <button type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 info-col">
+        <div class="map_container">
+          <div class="map">
+            <div id="googleMap"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="">Mitti Mai Milla Denge</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
