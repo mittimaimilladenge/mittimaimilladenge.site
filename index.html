@@ -16,10 +16,11 @@
 
   <title>Mitti Mai Milla Denge</title>
 
-  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="path/to/swiper.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" /> 
   <link href="css/responsive.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -369,6 +370,7 @@ max-width: 25px; /* Adjust the max-width for smaller screens */
           <li onclick="openBook('Java', 'Question Bank/Java.pdf')">Java QB</li>
           <li onclick="openBook('Design and Analysis of Algorithms', 'Question Bank/DAA .pdf')">Design and Analysis of Algorithms (DAA) QB</li>
           <li onclick="openBook('Computer Network', 'Question Bank/CN.pdf')">Computer Network (CN) QB</li>
+          <li onclick="openBook('Computer Network', 'Question Bank/CN Question Banlk.pdf')">Computer Network (CN) SEM QB</li>
           <li onclick="openBook('Data Warehousing and Mining', 'Question Bank/DWM QB-Answers .pdf')">Data Warehouse & Mining (DWM) QB</li>
         `;
         break;
@@ -403,6 +405,7 @@ max-width: 25px; /* Adjust the max-width for smaller screens */
       case 'Lab Practical':
         textbookList.innerHTML += `
           <li onclick="openBook('Python', 'Lab/Python Lab.pdf')">Python 1 to 10</li>
+          <li onclick="openBook('JAVA', 'Lab/JAVA Practical .pdf')">JAVA</li>
         `;
         break;
       default:
@@ -638,29 +641,93 @@ document.addEventListener("DOMContentLoaded", function() {
 
     <!-- client section -->
 
-    <div class="wrapper">
-      <section class="module-team">
-        <div class="team">
-          <h2 class="title">Meet our Team</h2>
-          <div class="team-cards">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                
-                <!-- Add more slides as needed -->
+  <section class="client_section layout_padding">
+    <div class="container ">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Founders Testimonials
+        </h2>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="client_container ">
+            <div class="detail-box">
+              <p>
+                Joining Mitti Mai Milla Denge was the best decision I made in university. The group's support and camaraderie have been invaluable. Truly, it feels like a family away from home.
+              </p>
+              <span>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="client_id">
+              <div class="img-box">
+                <img src="images/c1.jpg" alt="">
               </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="client_name">
+                <h5>
+                  Ajit Torane
+                </h5>
+                <h6>
+                  Project Manager
+                </h6>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+        <div class="col-md-6 mx-auto">
+          <div class="client_container ">
+            <div class="detail-box">
+              <p>
+                Being part of Mitti Mai Milla Denge has profoundly enriched my university experience. The friends I've made here are more than just classmates; they've become my support system, always ready to help and share. I couldn't have asked for a better group to be a part of!
+              </p>
+              <span>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="client_id">
+              <div class="img-box">
+                <img src="images/c2.jpg" alt="">
+              </div>
+              <div class="client_name">
+                <h5>
+                  Siddharth Nirmale
+                </h5>
+                <h6>
+                  Project Development Manager
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <div class="client_container ">
+            <div class="detail-box">
+              <p>
+                Mitti Mai Milla Denge has revolutionized my university experience. The group's unity and support, particularly in sharing notes, have been invaluable. I'm proud to be part of this incredible family!
+              </p>
+              <span>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="client_id">
+              <div class="img-box">
+                <img src="images/c3.jpg" alt="">
+              </div>
+              <div class="client_name">
+                <h5>
+                  Adarsh Dubey
+                </h5>
+                <h6>
+                  Founder
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+  </section>
 
     <!-- end client section -->
 
