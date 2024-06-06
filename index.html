@@ -16,7 +16,7 @@
 
   <title>Mitti Mai Milla Denge</title>
 
-  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
@@ -638,93 +638,226 @@ document.addEventListener("DOMContentLoaded", function() {
 
   <!-- client section -->
 
-  <section class="client_section layout_padding">
-    <div class="container ">
-      <div class="heading_container heading_center">
-        <h2>
-          Our Founders Testimonials
-        </h2>
-        <hr>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <div class="client_container ">
-            <div class="detail-box">
-              <p>
-                Joining Mitti Mai Milla Denge was the best decision I made in university. The group's support and camaraderie have been invaluable. Truly, it feels like a family away from home.
-              </p>
-              <span>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </span>
-            </div>
-            <div class="client_id">
-              <div class="img-box">
-                <img src="images/c1.jpg" alt="">
-              </div>
-              <div class="client_name">
-                <h5>
-                  Ajit Torane
-                </h5>
-                <h6>
-                  Project Manager
-                </h6>
-              </div>
-            </div>
+  <div class="wrapper">
+    <section class="module-team">
+       <div class="team">
+          <h2 class="title">Meet our Team</h2>
+          <div class="team-cards">
+             <!-- Slider main container -->
+             <div class="swiper-container">
+                <div class="swiper-wrapper">
+                   
+                   <!-- Add more slides as needed -->
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+             </div>
           </div>
-        </div>
-        <div class="col-md-6 mx-auto">
-          <div class="client_container ">
-            <div class="detail-box">
-              <p>
-                Being part of Mitti Mai Milla Denge has profoundly enriched my university experience. The friends I've made here are more than just classmates; they've become my support system, always ready to help and share. I couldn't have asked for a better group to be a part of!
-              </p>
-              <span>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </span>
-            </div>
-            <div class="client_id">
-              <div class="img-box">
-                <img src="images/c2.jpg" alt="">
-              </div>
-              <div class="client_name">
-                <h5>
-                  Siddharth Nirmale
-                </h5>
-                <h6>
-                  Project Development Manager
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mx-auto">
-          <div class="client_container ">
-            <div class="detail-box">
-              <p>
-                Mitti Mai Milla Denge has revolutionized my university experience. The group's unity and support, particularly in sharing notes, have been invaluable. I'm proud to be part of this incredible family!
-              </p>
-              <span>
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-              </span>
-            </div>
-            <div class="client_id">
-              <div class="img-box">
-                <img src="images/c3.jpg" alt="">
-              </div>
-              <div class="client_name">
-                <h5>
-                  Adarsh Dubey
-                </h5>
-                <h6>
-                  Founder
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+       </div>
+    </section>
+ </div>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ <script>
+  window.addEventListener("load", event => {
+
+var swiperWrapper = document.querySelector('.swiper-wrapper');
+
+/* The Team */
+var team = [{
+        name: "Adarsh Dubey",
+        role: "Founder",
+        desc: "",
+        photo: "file:///C:/Users/ADARSH/Downloads/Team%20Cards/image/Adarsh.webp",
+        email: "mailto:dadarsh360@gmail.com",
+        linkedin: "https://www.linkedin.com/in/adarsh-dubey27032004/",
+        },
+    {
+        name: "Harsh Shukla",
+        role: "Co-Founder",
+        desc: "",
+        photo: "file:///C:/Users/ADARSH/Downloads/Team%20Cards/image/Harsh.webp",
+        email: "mailto:",
+        linkedin: "",
+    },
+    {
+        name: "Ajit Torane",
+        role: "Project Manager",
+        desc: "",
+        photo: "file:///C:/Users/ADARSH/Downloads/Team%20Cards/image/Ajit.webp",
+        email: "mailto:",
+        linkedin: "",
+    },
+    {
+        name: "Siddharth Nirmale",
+        role: "Project Development Manager",
+        desc: "",
+        photo: "file:///C:/Users/ADARSH/Downloads/Team%20Cards/image/Siddharth.webp",
+        email: "mailto:",
+        linkedin: "",
+    },
+    {
+        name: "Kalpesh Ghanwat",
+        role: "Marketing Head",
+        desc: "",
+        photo: "file:///C:/Users/ADARSH/Downloads/Team%20Cards/image/Kalpesh.webp",
+        email: "mailto:",
+        linkedin: "",
+    },
+    {
+        name: "Dilip Rajbhar",
+        role: "Marketing Co-Head",
+        desc: ".",
+        photo: "file:///C:/Users/ADARSH/Downloads/Team%20Cards/image/Dilip.webp",
+        email: "mailto:",
+        linkedin: "",
+    },
+];
+
+/* Social Icons */
+var icons = [{
+    iEmail: "https://rafaelalucas.com/dailyui/6/assets/email.svg",
+    iLinkedin: "https://rafaelalucas.com/dailyui/6/assets/linkedin.svg",
+}];
+
+var 
+    iEmail = icons[0].iEmail,
+    iLinkedin = icons[0].iLinkedin
+
+
+/* Function to populate the team members */
+function addTeam() {
+    for (let i = 0; i < team.length; i++) {
+
+        /* Variables for the team */
+        var name = team[i].name,
+            role = team[i].role,
+            desc = team[i].desc,
+            photo = team[i].photo,
+            email = team[i].email,
+            linkedin = team[i].linkedin
+
+
+        /* Template for the Team Cards */
+        var template = `
+            <div class="swiper-slide">
+            <div class="card">
+                <span class="bg"></span>
+                <span class="more"></span>
+                <figure class="photo"><img src="${photo}"></figure>
+                    <article class="text">
+                        <p class="name">${name}</p>
+                        <p class="role">${role}</p> 
+                        <p class="desc">${desc}</p> 
+                    </article>
+                    
+                    <div class="social">
+                    <span class="pointer"></span>
+                    <div class="icons">
+                        <a class="icon" href="${email}" target="_blank" data-index="1"><img src="${iEmail}"></a>
+                        <a class="icon" href="${linkedin}" target="_blank" data-index="2"><img src="${iLinkedin}">
+                        </div>
+                        </div>
+                </div>
+            </div>`;
+
+        swiperWrapper.insertAdjacentHTML('beforeend', template);
+    }
+};
+
+
+addTeam();
+
+
+
+/* Swiper Settings */
+
+var mySwiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    centeredSlides: false,
+    speed: 800,
+    slidesPerView: 3,
+    spaceBetween: 40,
+    threshold: 5,
+
+
+    // If we need pagination
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+        1180: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+            centeredSlides: false,
+        },
+        799: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+        },
+    }
+});
+
+/* Show More */
+
+var btnShow = document.querySelectorAll('.more');
+
+
+
+btnShow.forEach(function (el) {
+    el.addEventListener('click', showMore);
+});
+
+function showMore(event) {
+    var card = event.target.closest(".swiper-slide");
+
+    if (card.classList.contains('show-more')) {
+        card.classList.remove('show-more');
+    } else {
+        card.classList.add('show-more')
+    }
+
+}
+
+
+/* Social Hover */
+var icon = document.querySelectorAll('.icon');
+
+icon.forEach(function (el) {
+    el.addEventListener("mouseenter", followCursor);
+
+});
+
+
+function followCursor(event) {
+    var pointer = event.currentTarget.closest(".swiper-slide").querySelector('.pointer'),
+        index = event.currentTarget.dataset.index,
+        sizeIcon = (60 * index) + 25;
+
+    pointer.style.transform = `translateX(${sizeIcon}px)`;
+}
+
+
+/* end */
+});
+ </script>
+
+
+
 
   <!-- end client section -->
 
