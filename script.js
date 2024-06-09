@@ -29,7 +29,7 @@ window.addEventListener("load", event => {
         },
         {
             name: "Siddharth Nirmale",
-            role: "Project Development Manager",
+            role: "Development Manager",
             desc: "Say hello to Siddharth Nirmale, the architect of our digital realm.",
             photo: "image\Siddharth.png",
             email: "mailto:siddharthnirmale@gmail.com",
