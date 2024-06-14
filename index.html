@@ -364,20 +364,17 @@ max-width: 25px; /* Adjust the max-width for smaller screens */
         break;
       case 'Question Bank':
         textbookList.innerHTML = `
-          <li onclick="openBook('Python', 'Question Bank/Python QB.pdf')">Python QB</li>
+          <li onclick="openBook('Python', 'Question Bank/Python QB.pdf')">Python SEM QB</li>
           <li onclick="openBook('Java', 'Question Bank/JAVA QB ANSW.pdf')">Java SEM QB</li>
-          <li onclick="openBook('Java', 'Question Bank/Java.pdf')">Java QB</li>
-          <li onclick="openBook('Design and Analysis of Algorithms', 'Question Bank/DAA .pdf')">Design and Analysis of Algorithms (DAA) QB</li>
-          <li onclick="openBook('Computer Network', 'Question Bank/CN.pdf')">Computer Network (CN) QB</li>
+          <li onclick="openBook('DAA (Design Analysis of Algorithm)', 'Question Bank/DAA.pdf')">DAA (Design Analysis of Algorithm) SEM QB</li>
           <li onclick="openBook('Computer Network', 'Question Bank/CN Question Banlk.pdf')">Computer Network (CN) SEM QB</li>
-          <li onclick="openBook('Data Warehousing and Mining', 'Question Bank/DWM QB-Answers .pdf')">Data Warehouse & Mining (DWM) QB</li>
         `;
         break;
       case 'Question Paper':
         textbookList.innerHTML = `
-          <li onclick="openBook('SEM-1 PREVIOUS PAPER', 'Question Paper/SEM-1 PREVIOUS PAPER .pdf')">SEM-1 PREVIOUS PAPER</li>
-          <li onclick="openBook('SEM-2 PREVIOUS PAPER', 'Question Paper/SEM-2 PREVIOUS PAPER.pdf')">SEM-2 PREVIOUS PAPER</li>
-          <li onclick="openBook('SEM-3 PREVIOUS PAPER', 'Question Paper/SEM-3 PREVIOUS PAPER .pdf')">SEM-3 PREVIOUS PAPER</li>
+          <li onclick="openBook('SEM-1 PREVIOUS PAPER', 'Question Paper/SEM-1 PREVIOUS PAPER .pdf')">SEM-1 2022-2023</li>
+          <li onclick="openBook('SEM-2 PREVIOUS PAPER', 'Question Paper/SEM-2 PREVIOUS PAPER.pdf')"> SEM-2 2022-2023</li>
+          <li onclick="openBook('SEM-3 PREVIOUS PAPER', 'Question Paper/SEM-3 PREVIOUS PAPER .pdf')">SEM-3 2023-2024</li>
         `;
         break;
       case 'Assignment':
@@ -425,22 +422,22 @@ max-width: 25px; /* Adjust the max-width for smaller screens */
     switch (subject) {
       case 'Python':
         textbookList.innerHTML = `
-          <li onclick="openBook('Python Assignment 1,2,3,4 & 5', 'Assignment/PYTHON 2nd ASS TO 5th ASS.pdf')">Python Assignment 1,2,3,4 & 5</li>
+          <li onclick="openBook('Python Assignment 1,2,3,4 & 5', 'Assignment/Python QB.pdf')">Python Assignment 1,2,3,4 & 5</li>
         `;
         break;
       case 'Java':
         textbookList.innerHTML = `
-          <li onclick="openBook('JAVA Assignment 1 to 12', 'Assignment/JAVA Assignment 1 to 12.pdf')">JAVA Assignment 1 to 12</li>
+          <li onclick="openBook('JAVA Assignment 1 to 12', 'Assignment/JAVA Assignment.pdf')">JAVA Assignment 1 to 12</li>
         `;
         break;
       case 'DWM':
         textbookList.innerHTML = `
-          <li onclick="openBook('DWM 1,2,3 & 4', 'Assignment/DWM Assignment 1 to 4.pdf')">DWM 1,2,3 & 4</li>
+          <li onclick="openBook('DWM 1,2,3 & 4', 'Assignment/DWM Assignment.pdf')">DWM 1,2,3 & 4</li>
         `;
         break;
       case 'DAA':
         textbookList.innerHTML = `
-          <li onclick="openBook('DAA 1,2,3,4 & 5', 'Assignment/DAA Assignment 1 to 5.pdf')">DAA 1,2,3,4 & 5</li>
+          <li onclick="openBook('DAA 1,2,3,4 & 5', 'Assignment/DAA Assignment.pdf')">DAA 1,2,3,4 & 5</li>
         `;
         break;
       case 'OOPS':
