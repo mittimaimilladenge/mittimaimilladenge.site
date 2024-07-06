@@ -11,7 +11,7 @@ getYear();
 /** google_map js **/
 function myMap() {
     var mapProp = {
-        center: new google.maps.LatLng(18.949683676612867, 73.17736717913202), // Replace YOUR_LATITUDE and YOUR_LONGITUDE with the desired coordinates
+        center: new google.maps.LatLng(19.041461269663596, 73.10333060543363), // Replace YOUR_LATITUDE and YOUR_LONGITUDE with the desired coordinates
         zoom: 18,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
